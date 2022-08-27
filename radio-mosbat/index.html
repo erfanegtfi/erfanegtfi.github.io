@@ -25,19 +25,27 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="radio_mosbat">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v32.102/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="loader.css">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>radio_mosbat</title>
+  <title>Radio Mosbat</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+	     <div id="loader">
+		  <img src="favicon.png" width="200" height="200">
+
+      <h1 id="loader-title">در حال بارگذاری...</h1>
+	  
+      <div class="lds-facebook"></div>
+  </div>
   <script>
-    var serviceWorkerVersion = '746560683';
+    var serviceWorkerVersion = '3492730257';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
