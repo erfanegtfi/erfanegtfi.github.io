@@ -16,6 +16,7 @@ _flutter.loader = null;
     const base = document.querySelector("base");
     return (base && base.getAttribute("href")) || "";
   }
+  
 
   function ensureTrailingSlash(uri) {
     if (uri == "") {
