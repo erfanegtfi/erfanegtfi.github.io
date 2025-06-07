@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="./">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -43,10 +43,10 @@
   </div>
 
   <script src="flutter_bootstrap.js" async>
+        window.flutterWebRenderer = "html"; // Optional: force HTML renderer
 
     window.addEventListener('load', function () {
         // Wait until Flutter paints the first frame
-        window.flutterWebRenderer = "html"; // Optional: force HTML renderer
         const observer = new MutationObserver(() => {
           const canvas = document.querySelector('flt-glass-pane') || document.querySelector('flt-canvas');
           if (canvas) {
